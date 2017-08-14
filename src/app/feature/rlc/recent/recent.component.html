@@ -1,9 +1,6 @@
 <virtual-scroll [items]="rlcObject" (update)="viewPortItems = $event">
-    <mdl-list *ngFor="let r of viewPortItems; let i=index">
-              <mdl-list-item lines="2" (click)="setRlc(r)" 
-                          ng-mouseover="hoverActive=true"
-                          ng-mouseleave="hoverActive=false"
-                          ng-style="hoverActive ? {'background-color':red} : {}">
+    <mdl-list>
+              <mdl-list-item *ngFor="let r of viewPortItems" lines="2" (click)="setRlc(r)">
                 <mdl-list-item-primary-content >
                   <mdl-icon mdl-list-item-avatar>account_balance</mdl-icon>
                   <span>{{r.Name}}</span>
