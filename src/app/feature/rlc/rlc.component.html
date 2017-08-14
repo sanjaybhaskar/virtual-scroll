@@ -1,0 +1,22 @@
+<mdl-layout mdl-layout-fixed-header mdl-layout-header-seamed mdl-layout-mode="waterfall">
+  <mdl-layout-header>
+    <mdl-layout-header-row>
+      <mdl-layout-title>{{title}}</mdl-layout-title>
+     <mdl-layout-spacer></mdl-layout-spacer>
+                       <mdl-icon>home</mdl-icon>
+    </mdl-layout-header-row>
+  </mdl-layout-header>
+  <mdl-layout-drawer>
+    <mdl-layout-title style="background-color:brown; color:aliceblue">Tomtra</mdl-layout-title>
+    <nav class="mdl-navigation">
+      <a routerLink="" class="mdl-navigation__link"><mdl-icon style="padding-right:10px">account_balance</mdl-icon>Risk legal counterpart</a>
+      <a class="mdl-navigation__link"><mdl-icon style="padding-right:10px">euro_symbol</mdl-icon>Transactions</a>
+      <a class="mdl-navigation__link"><mdl-icon style="padding-right:10px">contact_mail</mdl-icon>Contact us</a>
+      <a class="mdl-navigation__link"><mdl-icon style="padding-right:10px">feedback</mdl-icon>Feeback</a>
+      <a class="mdl-navigation__link"><mdl-icon style="padding-right:10px">help</mdl-icon>Help</a>
+    </nav>
+  </mdl-layout-drawer>
+  <mdl-layout-content>
+        <router-outlet name='recent'></router-outlet>
+  </mdl-layout-content>
+</mdl-layout>
